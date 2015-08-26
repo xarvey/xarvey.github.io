@@ -22,31 +22,33 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \usepackage{hyperref}
 
 \name{Yao Xiao} % Your name
-\address{2412 Yeager Road \\ West Lafayette , Indiana 47906} % Your address
+
 \address{(765)~$\cdot$~409~$\cdot$~3418 \\ xiao67@purdue.edu} % Your phone number and email
+\address{\url{http://xarvey.github.io}}
+
+\address{2412 Yeager Road \\ West Lafayette , Indiana 47906}
 
 
 
 
 \begin{document}
 \center
-{\url{http://xarvey.github.io/}}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Objective}
 %To obtain an internship position for Twitter
-To obtain an internship in the computer science field in summer 2016, utilizing my skills in software engineering and machine intelligence.
+To obtain an internship in the computer science field in summer 2016, utilizing my skills in software engineering and machine learning.
 \end{rSection}
 \begin{rSection}{Education}
 
 {\bf Purdue University, West Lafayette} \hfill {\em December 2016} \\ 
-Bachelor of Science in Computer Science \\
+Bachelor of Science in Computer Science with a Minor in Math\\
 Overall GPA: 3.57/4.00
 
 \end{rSection}
@@ -57,9 +59,8 @@ Overall GPA: 3.57/4.00
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & Familiar with Java, C++, C, Python. Knows Delphi, R, ARM, X86\\
-Web Designing & Javascript, Apache, mongodb, mysql \\
-Tools & Git, Vim, Maven, Sublime, Latex, Grunt, RequireJS, MeteorJS
+Computer Languages & Proficient in Java, Javascript, C, Python, mysql \\& Familiar with C++, Delphi, R, MATLAB \\
+Tools & Git, Maven, Intellij, Latex, Grunt
 \end{tabular}
 
 \end{rSection}
@@ -67,11 +68,9 @@ Tools & Git, Vim, Maven, Sublime, Latex, Grunt, RequireJS, MeteorJS
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Software Engineering Intern}{May 2015 - August 2015}{Homeaway.com}{Austin,TX}
-\item Redesigned a front end data validator which can validate the data passing through the page 
-\item Utilized the proctor framework to drop the validator scripts on certain percentage of the users 
-\item Implemented a RUM(Real User Monitoring) integration to current system for future analysis on Hadoop 
-\item Tool used: Java, Javascript, Grunt, Eslint, Maven, Spring
-
+\item Redesigned a front end data validator which can validate the data passing through the page in Javascript
+\item Utilized the proctor to drop the validator scripts on certain percentage of the 3,000,000 users/day in Java
+\item Implemented a RUM(Real User Monitoring) integration to current system  
 \end{rSubsection}
 
 \begin{rSubsection}{Teaching Assistant}{January 2013 - December 2014}{Purdue University}{West Lafayette, IN}
@@ -95,18 +94,25 @@ Tools & Git, Vim, Maven, Sublime, Latex, Grunt, RequireJS, MeteorJS
 
 \begin{rSection}{Projects}
 
-\begin{rSubsection}{A Javascript compiler}{Spring 2015}{Purdue University}{West Lafayette,IN}
-\item Using Lex/Yacc(front end) and LLVM C++(back end) to implement a mini javascript compiler
-\item Generated diagnosis report of a statement using the dynamic backward program slice method  
-\item Optimized code using common sub-expression elimination.
-\end{rSubsection}
-
-
-\begin{rSubsection}{Find a room}{Fall 2014}{Purdue University}{West Lafayette,IN}
+\begin{rSubsection}{Find a room}{Fall 2014}{}{}
 \item Created an indoor navigator app for users finding destination indoor.
 \item Focused on backend design and the navigation algorithm
 \item Using HTML, CSS, Javascript, mongodb, and meteor JS framework to create the app
 \end{rSubsection}
+
+\begin{rSubsection}{A Javascript compiler}{Spring 2015}{}{}
+\item Implement a compiler/runtime for a javascript like language with lex and yacc in C++
+\item Gave user warning at both compile time and run time
+\end{rSubsection}
+
+\begin{rSubsection}{My Friend}{Spring 2015}{}{}
+\item Collaborated with fellow classmates to design a pseudo-Facebook, supporting user posting message in Python
+\item Allowing user posting their messages in their own friend circles
+\item Created a search engine by various metric
+\end{rSubsection}
+
+
+
 
 %\begin{rSubsection}{PeteTwitt}{Spring 2014}{}{}
 %\item Collaborated with fellow classmates to design a pseudo-twitter, supporting user posting message
