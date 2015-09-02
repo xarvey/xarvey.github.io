@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 SEP 2015 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 SEP 2015 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,8 +511,7 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
 \c@partCounter=\count128
 \c@homeworkProblemCounter=\count129
-
-No file hw1.aux.
+ (./hw1.aux)
 \openout1 = `hw1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
@@ -527,6 +526,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
 LaTeX Font Info:    ... okay on input line 138.
+
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -601,16 +601,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<image1.png, id=13, 582.175pt x 513.92pt>
+File: image1.png Graphic file (type png)
+ <use image1.png>
+Package pdftex.def Info: image1.png used on input line 149.
+(pdftex.def)             Requested size: 407.51973pt x 359.74153pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 147--151
 
  []
 
+<image2.png, id=15, 605.26125pt x 518.93875pt>
+File: image2.png Graphic file (type png)
+ <use image2.png>
+Package pdftex.def Info: image2.png used on input line 153.
+(pdftex.def)             Requested size: 423.67998pt x 363.25465pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-[2]
+[2 <./image1.png>] [3 <./image2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
@@ -625,15 +636,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[3] [4] (./hw1.aux) ) 
+[4] [5] (./hw1.aux) ) 
 Here is how much of TeX's memory you used:
- 13392 strings out of 493117
- 271325 string characters out of 6135433
+ 13406 strings out of 493117
+ 271499 string characters out of 6135433
  322297 words of memory out of 5000000
- 16582 multiletter control sequences out of 15000+600000
+ 16591 multiletter control sequences out of 15000+600000
  12456 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,66p,413b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,16n,66p,413b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
@@ -645,10 +656,10 @@ mr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
 .pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
 pfb>
-Output written on hw1.pdf (4 pages, 109528 bytes).
+Output written on hw1.pdf (5 pages, 137814 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
