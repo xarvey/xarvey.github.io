@@ -180,7 +180,10 @@ As \(t\to0\) the solution will be either $\infty$ or $-\infty$ so the initial va
 	\begin{split}
 			ty'+(t+1)y&=2te^{-t}\\
 			y'+\frac{t+1}{t}y&=2e^{-t} \\
-			\mu(t)=e^{t}t \\
+			\frac{d\mu}{dt} &=\frac{\mu(t+1)}{t} \\
+			\frac{d\mu}{\mu} &= \frac{dt(t+1)}{dt} \\
+			ln(\mu)&=t+ln(t) \\
+			\mu(t) &=e^{t}t \\
 			e^{t}ty'+e^{t}t\frac{t+1}{t}y&=2e^{-t}e^{t}t \\
 			e^{t}ty'+e^{t}(t+1)y&=2t \\
 			\frac{de^tty}{dt} &= 2t \\
