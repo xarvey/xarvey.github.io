@@ -247,7 +247,7 @@ x=tan^{-1}(x+y)+C
 Q(t) means the amount of dye in the tank at time t, the system lost  2 L/min *(Q(t)/200) g/L = Q(t)/100 g/min
 \[
 \begin{split}
-\frac{dQ}{dt} = -0.01Q
+\frac{dQ}{dt} = -\frac{Q}{100}
 \end{split}
 \]
 Also Q(0)=200g
@@ -258,7 +258,18 @@ when \( 200e^{-0.01t} = 2 \) , t=460.5min
 
 
 \begin{homeworkProblem}
+\(rate \ in  = \gamma g/L *2 L/min = 2\gamma g/min \) \\
+\(rate \ out  = Q(t)/120 g/L *2 L/min = \frac{Q(t)}{60} g/min. \)
 
+So the equation is 
+\[
+	\frac{dQ}{dt} = \frac{120\gamma-Q(t)}{60}
+	\]
+Solve it with Q(0)=0, we get
+\[
+	Q(t)=120\gamma-120\gamma*e^{\frac{-t}{60}}
+	\]
+	when \( t \to \infty \), \( Q(t) \to 120\gamma \)
 \end{homeworkProblem}
 
 \end{document}
