@@ -238,8 +238,7 @@ since \(	n \to \infty  \), the upper formula becomes \(y_n=(1+\frac{t-t_0}{n})^n
 \begin{homeworkProblem}
 \[
 \begin{split}
-	y'&=2y-3e^{-t}\\
-	(e^{2t}y)'&=[e^2t * e^-t ]+C\\
+	y'&=-2y+e^{-t}\\
 	y=e^-{t}+c
  	C &= 0 \\
 	y(t)=e^{-t}	\\
@@ -247,6 +246,65 @@ since \(	n \to \infty  \), the upper formula becomes \(y_n=(1+\frac{t-t_0}{n})^n
 \]
 So \( y(1)=\frac{1}{e} \)
 
+2. Using the following code:
+\begin{verbatim}
+n=1;
+while (1)
+[x,y]=eul('fcn1',[0,1],1,1/n);
+if abs(y(end)-1/exp(1))<0.05
+     disp(n);
+     break;
+end
+n=n+1;
+end
+
+\end{verbatim}
+
+We get the result:
+\begin{verbatim}
+x =
+
+     0
+     1
+
+
+y =
+
+     1
+     0
+
+
+x =
+
+         0
+    0.5000
+    1.0000
+
+
+y =
+
+    1.0000
+    0.5000
+    0.3033
+
+
+x =
+
+         0
+    0.3333
+    0.6667
+    1.0000
+
+
+y =
+
+    1.0000
+    0.6667
+    0.4611
+    0.3248
+\end{verbatim}
+
+so n=3
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
@@ -262,10 +320,33 @@ So \( y(1)=\frac{1}{e} \)
 \]
 So \( y(1)=\frac{1}{e} \)
 
+2. Using the same code as above, we get \(n=22\)
+
 \end{homeworkProblem}
 
 \begin{homeworkProblem}
+1. Since 
+\[
+\frac{dy}{dt}=\frac{d\int _{a}^{t} e^{-u^2}}{dt}
+\]
+Using fundamental theory of calculus.
+We get
+\[
+\frac{dy}{dt}=f(t)=e^{-t^2}
+\]
 
+2. plug in using the same code for problem 7
+\begin{verbatim}
+ans =
+
+         0         0
+    0.5000    0.5000
+    1.0000    0.8894
+    1.5000    1.0733
+    2.0000    1.1260
+\end{verbatim}
+
+So f(2)=1.1260
 \end{homeworkProblem}
 
 
