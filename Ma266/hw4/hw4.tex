@@ -1,0 +1,229 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{2.0}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime)}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#4}
+\newcommand{\hmwkDueDate}{September 19th, 2015}
+\newcommand{\hmwkClass}{Differential Equation}
+\newcommand{\hmwkClassTime}{Section 061}
+\newcommand{\hmwkClassInstructor}{Professor Heather Lee}
+\newcommand{\hmwkAuthorName}{Yao Xiao}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\begin{homeworkProblem}
+16.
+The statement of the problem implies 
+\[
+\frac{dT}{dt}=k(T-70)
+\]
+
+We also know that \(T(0) = 200\) and \(T(1) = 190 \)
+
+So we can get 
+\[T = \frac{\int-70ke^{-kt}dt}{e^{-kt}} = 70 + Ce^{kt} \]
+
+Since \( T(0)=200 \)  so \( C=130\)
+
+ \( T=70+130e^{kt} \), when \( t= 1\) we plug it in, we could get \( 70+130e^k=190 \)
+\( k=ln\sqrt{12/13}\)
+
+\(70+130e^{ln(12/13)t}=150\)
+
+ \(t \approx 6.065 \)
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+21.
+\[
+\begin{split}
+F=ma \\
+m\frac{dv}{dt}=-mg-v/30 \\
+\frac{dv}{dt	}+\frac{v}{4.5}=-g \\
+\end{split}
+\]
+Solve it, plug in t=0, v=20 get:
+\( v=64.1e^{-t/4.5}-44.1\)
+So distance 
+
+\(x=-44.1t-299.45*e^{-0.222t}+C \)
+plug in t=0, x=30,
+we get C=318.5.
+
+so \(x=-44.1t-299.45e^{-0.22t}+318.5 \)
+
+when \( v=0 \) it reaches the max height.
+we get \( t=1.683s \)
+\[ x=45.783m \]
+
+b) when the ball is dropping. We use similar method which could get(don't wanna type the entire procedure in latex = =)
+\[
+	x=4.5g(t+4.5e^{-0.22t})-4.5^2 
+\]
+we could get t=3.446, and therefore the entire time is 1.683+3.446=5.1129s
+ 
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+2.4, 17:
+\[ y'=ty(3-y) \]
+\[\partial f/\partial = 3t-2ty \]
+\[ dy/dt =  t(3y-y^2) \]
+\[ 1/3(ln(y)-ln(3-y)=\frac{t^2}{2} + C \]
+\[ y(t)=\frac{3e^{3t^2/2}}{3e/y_0-3+3e^{3t^2/2}} \]
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Supplementary problem D:
+\[ 
+\begin{split}
+\frac{dy}{dt}=y^2-4y, y(0)=8 \\
+\frac{dy}{y^2-4y}=dt \\
+\frac{ln(4-y)-ln(y)}{4} =t + C \\
+\frac{(ln(-4)-ln(8))}{4}=C \\
+\frac{ln(4-y)-ln(y)}{4} =t + \frac{(ln(-4)-ln(8))}{4} \\
+\ln(4-y)-ln(y)=4t+ln(-2) \\
+y=\frac{4}{1-(e^{4t}/2)}
+\end{split}
+\]
+
+since we want the solution to be continuous, we could get \( y\neq \frac{ln(2)}{4} \) , but the solution need to be containing 0, so the answer is 
+\[ (-\infty	, \frac{ln(2)}{4})  \]
+
+
+\end{homeworkProblem}
+
+
+\end{document}
