@@ -1,0 +1,307 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{2.0}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime)}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#9}
+\newcommand{\hmwkDueDate}{November 6th, 2015}
+\newcommand{\hmwkClass}{Differential Equation}
+\newcommand{\hmwkClassTime}{Section 061}
+\newcommand{\hmwkClassInstructor}{Professor Heather Lee}
+\newcommand{\hmwkAuthorName}{Yao Xiao}
+\newcommand{\La}{\mathcal{L}}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+
+\begin{homeworkProblem}
+\subsection{6.1-5b}
+From the table, we get
+\[
+\begin{split}
+f(t)=t^2\\
+\La(t^2)=\frac{2!}{s^3} \\
+\end{split}
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.1-8}
+
+From the table, we get
+\[
+\La(sinh at)=\frac{a}{s^2-a^2} \\\]\[
+\La(sinh bt)=\frac{b}{s^2-b^2}
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.1-15}
+From the table, we get
+\[ \La(t^ne^{at})=\frac{n!}{(s-a)^{n+1}}  \]
+So
+\[ \La(te^{at})=\frac{1}{(s-a)^{2}}  \]
+
+
+\end{homeworkProblem}
+\begin{homeworkProblem}
+
+\subsection{6.2-10}
+\[
+\begin{split}
+F(s)&=\frac{2s-3}{s^2+2s+10}\\
+&=\frac{2s-3}{(s+1)^2+9}\\
+&=\frac{2(s+1)-5}{(s+1)^2+9}\\
+&= 2[\frac{s+1}{(s+1)^2+3}]-\frac{5}{3}[\frac{3}{(s+1)^2+3^2}]
+\end{split}
+\]
+Looking up the table, plug it in, we get.
+
+\[
+\La^{-1}(F(s))=2e^{-t}cos(3t)-\frac{5}{3}e^{-t}sin(3t)
+\]
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
+\subsection{6.2-21}
+\[
+\begin{split}
+	y''-2y'+2y=cos(t)\\
+	y(0)=1\\
+	y'(0)=0\\
+\La(y'')-2\La(y')+2\La(y)=\La(cost)\\
+\La(y'')=s^2\La(y)-s\\
+\La(y')=s\La(y)-1 \\
+\La(cos(t))=\frac{s}{s^2+1} \\
+\end{split}
+\]
+
+Plug it in, we get
+
+\[
+	\La(y)=\frac{s^3-2s^2+2s-2}{(s^2-2s+2)(s^2+1)}
+\]
+We dispose the equation above, we could get
+
+\[
+	\La(y)=\frac{4}{5}\frac{s-1}{(s-1)^2+1}-\frac{2}{5}	[\frac{1}{(s-1)^2+1}]+1/5\frac{s}{s^2+1}-2/5\frac{1}{s^2+1}
+\]
+
+Plug it in with the table, we get the solution
+
+\[
+y(t)=\frac{4}{5}e^tcost-\frac{2}{5}e^tsin(t)+\frac{1}{5	}cos(t)-\frac{2}{5}sin(t)
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.3-1}
+\[
+g(t) =
+\begin{cases} 
+0 &  0<=t<1 \\ 
+1 &  1<=t<3 \\ 
+3 &  3<=t<4 \\ 
+-3 &  4<=t<\infty \\ 
+
+\end{cases}
+\] 
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.3-2}
+
+\[
+g(t) =
+\begin{cases} 
+0 &  0<=t<2 \\ 
+t-3 &  2<=t<3 \\ 
+-1 &  3<=t<\infty \\ 
+\end{cases}
+\] 
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.3-18}
+\[
+\begin{split}
+f(t)&=t-u_1(t)(t-1)\\
+\La(f(t))&=\La(t)-\La(t-1)u_1(t)\\
+&=\frac{1}{s^2}-e^{-s}\frac{1}{s^2}\\
+&=\frac{(1-e^{-s})}{s^2}
+\end{split}
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.3-21}
+\[
+\begin{split}
+F(s)&=\frac{2(s-1)e^{-2s}}{s^2-2s+2}\\
+&=2\La(\frac{(s-1)e^{-2s}}{(s-1)^2+1}\\
+\end{split}
+\]
+So we could transfer it back using the formula on the table. We get
+
+\[
+\La^{-1}(F(s))=2u_2(t)e^{t-2}cos(t-2)
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.3-23}
+\[
+F(s)=\frac{(s-2)e^{-s}}{(s-2)^2-1}
+\]
+Let \[
+g(s)=\frac{s-2}{(s-2)^2-1}
+\]
+Since \[
+\La(e^{2t}cosht=\frac{s-2}{(s-2)^2-1}
+\]
+So the result is going to be
+
+\[
+\La^{-1}(F(s))=\La^{-1}(e^{-s}g(s))=f(t-1)u(t-1)
+\]
+
+which is equal to
+\[
+e^{2t-2}cosh(t-1)u(t-1)
+\]
+\end{homeworkProblem}
+
+
+\end{document}

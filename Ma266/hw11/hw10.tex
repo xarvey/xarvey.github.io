@@ -1,0 +1,197 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{2.0}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime)}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#10}
+\newcommand{\hmwkDueDate}{November 6th, 2015}
+\newcommand{\hmwkClass}{Differential Equation}
+\newcommand{\hmwkClassTime}{Section 061}
+\newcommand{\hmwkClassInstructor}{Professor Heather Lee}
+\newcommand{\hmwkAuthorName}{Yao Xiao}
+\newcommand{\La}{\mathcal{L}}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+
+\begin{homeworkProblem}
+\subsection{6.5 - 14}
+\subsubsection{a}
+\[\begin{split}
+y''+\gamma y' +y =\delta(t-1)\\
+y''+\frac{1}{2} y' +y =\delta(t-1)\\
+s^2\La(y)-sy(0)-y'(0)+\frac{1}{2}[s\La(y)-y(0))+\La(y)=e^{-s}
+\end{split}\]
+Plug it in, we get
+\[
+Y(s)=\frac{e^{-s}}{s^2+\frac{1}{2}s+1}
+\]
+Inverse the Laplace Transform. We get
+\[
+\begin{split}
+y(t)&=\La^{-1}(\frac{e^{-s}}{(s+\frac{1}{4})^2+(\frac{\sqrt{15}}{4})^2})\\
+&=\frac{4}{\sqrt{15}}u_1(t)e^{-\frac{1}{4}(t-1)}sin(\frac{\sqrt{15}}{4}(t-1))
+\end{split}
+\]
+\includegraphics[scale=0.7]{1.png}
+\subsubsection{b}
+For maximum, let \(y'(t1)=0\)
+We get \(t=2.36134\) Plug it in, we get
+\( y=0.711531 \)
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
+\subsection{L}
+\[
+\begin{split}
+y''+4y=20e^t\\
+y'(0)=0 \ y(0)=\\
+s^2y(s)-sy(0)-y'(0)+4y(s)=\frac{20}{s-1} \\
+y(s)=\frac{20}{(s-1)(s^2+4)}
+\end{split}
+\]
+Find the inverse of \(\La Y(s) \)
+\[
+\begin{split}
+y(s)&=\frac{A}{s-1}+\frac{Bs+C}{s^2+4}\\
+&= \frac{4}{s-1}+\frac{-4s-4}{s^2+4}\\
+&= \frac{4}{s-1}-\frac{4s}{s^2+4}-\frac{4}{s^2+4}\\
+\end{split}
+\]
+Looking up the table , we get
+\[
+y(t)=4e^t-4cos(2t)-2sin(2t)
+\]
+\end{homeworkProblem}
+
+\end{document}
