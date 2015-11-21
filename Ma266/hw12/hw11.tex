@@ -1,0 +1,245 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{2.0}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime)}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#11}
+\newcommand{\hmwkDueDate}{November 23th, 2015}
+\newcommand{\hmwkClass}{Differential Equation}
+\newcommand{\hmwkClassTime}{Section 061}
+\newcommand{\hmwkClassInstructor}{Professor Heather Lee}
+\newcommand{\hmwkAuthorName}{Yao Xiao}
+\newcommand{\La}{\mathcal{L}}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+
+\begin{homeworkProblem}
+\subsection{6.6 - 4}
+\[
+\int^t_0 (t-\tau)^2 cos(2\tau)d\tau 
+\]
+So we could let \(g(t)=t^2\)
+\(h(t)=cos(2t)\) \\
+So \( G(s) = \frac{2}{s^3} \) \\ 
+\( H(s) = \frac{s}{s^2+4} \)
+
+\[
+G(s)H(s)=\frac{2s}{s^3(s^2+4)}
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{6.6 -5}
+\[
+\begin{split}
+\int^t_0 e^{-(t-\tau)}sin(\tau)d\tau\\
+g(t)=e^{-t}\\
+h(t)=sin(t) \\
+G(s)=\frac{1}{s+1}\\
+H(s)=\frac{1}{s^2+1}
+\end{split}
+\]
+So the result should be 
+\[
+G(s)H(s)=\frac{1}{(s+1)(s^2+1)}
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{7.2-22}
+\[
+  \begin{bmatrix}
+    3 & -2 \\
+    2 & -2
+  \end{bmatrix}
+  *
+  \begin{bmatrix}
+    4e^{2t} \\
+    2e^{2t}
+  \end{bmatrix} =
+    \begin{bmatrix}
+    8e^{2t} \\
+    4e^{2t}
+  \end{bmatrix}
+  = \begin{bmatrix}
+    (4e^{2t})' \\
+    (2e^{2t})'
+  \end{bmatrix}
+  \] 
+  So it satisfies the condition
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{7.2-23}
+Plug x into formula 1, we get
+\[
+  x'=\begin{bmatrix}
+     e^t(3+2t) \\
+    2e^t(1+t) 
+  \end{bmatrix}
+  \]
+  which is equal to
+  \[
+ x'= \begin{bmatrix}
+  3e^t+2te^t \\
+  2e^t+2te^t
+  \end{bmatrix}
+  \] 
+  So it satisfies the condition
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{M}
+For Tank 1:
+RateIn = 2oz/gal * 5gal/min = 10oz/min\\
+RateOut = x1oz/50gal*5gal/min=x1/10 oz/min
+
+Hence, the solution is 
+\[
+	x1'(t)=10-\frac{x1(t)}{10}
+\]
+
+For Tank 2: \\
+
+RateIn = x1/10 \\
+RateOut =  x2/20 * 55= x2/4 \\
+
+Hence, the solution is 
+\[
+	x2'(t)=\frac{x1}{10}-\frac{x2}{4}
+\]
+
+\end{homeworkProblem}
+
+
+\end{document}
