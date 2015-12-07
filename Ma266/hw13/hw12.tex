@@ -279,6 +279,142 @@ when \( \gamma=-2 \)
 
 
 \begin{homeworkProblem}
+\subsection{N}
+\[
+  \begin{bmatrix}
+    4 & -3 \\
+    8 & -6
+  \end{bmatrix}  
+  \] 
+ We found that the eigenvalue for the matrix is 
+  \[  \gamma=0 \ \ \gamma=-2 \]
+  and the corresponding eigenvectors are
+  \[
+  v_1 = \begin{bmatrix}
+	3\\	
+	4\\
+	\end{bmatrix}
+  \] and
+  \[
+  v_2 = \begin{bmatrix}
+	1\\	
+	2\\
+	\end{bmatrix}
+  \] 
+  
+  So the corresponding fundamental matrix will be 
+  \[
+  \begin{bmatrix}
+    3e^{0} & 1e^{-2t} \\
+    4e^{0} & 2e^{-2t}
+  \end{bmatrix}  
+  \] 
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{7.6-2}
+\[
+  \begin{bmatrix}
+    -1 & -4 \\
+    1 & -1
+  \end{bmatrix}  
+  \] 
+ We found that the eigenvalue for the matrix is 
+  \[  \gamma=-1+2i \ \ \gamma=-1-2i \]
+  and the corresponding eigenvectors are
+  \[
+  v_1 = \begin{bmatrix}
+	2i\\	
+	1\\
+	\end{bmatrix}
+  \] and
+  \[
+  v_2 = \begin{bmatrix}
+	-2i\\	
+	1\\
+	\end{bmatrix}
+  \] 
+  So the fundamental set of solution is 
+  \[
+  x(t)=
+  \begin{bmatrix}
+	2i\\	
+	1\\
+	\end{bmatrix}e^{(-1+2i)t}+
+	 \begin{bmatrix}
+	-2i\\	
+	1\\
+	\end{bmatrix}e^{(-1-2i)t}
+  \]
+  Since \(re^{i\theta}=rcos(\theta)+irsin(\theta) \)
+\[
+  x(t)=
+  c_1e^{-t}
+  \begin{bmatrix}
+	2cos(2t)\\	
+	sin(2t)\\
+	\end{bmatrix}+
+	c_2e^{-t}
+	 \begin{bmatrix}
+	-2sin(2t)\\	
+	cos(2t)\\
+	\end{bmatrix}
+\]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\subsection{7.6-6}
+\[
+  \begin{bmatrix}
+    1 & 2 \\
+    -5 & -1
+  \end{bmatrix}  
+  \] 
+ We found that the eigenvalue for the matrix is 
+  \[  \gamma=3i \ \ \gamma=-3i \]
+  and the corresponding eigenvectors are
+  \[
+  v_1 = \begin{bmatrix}
+	1-3i\\	
+	-5\\
+	\end{bmatrix}
+  \] and
+  \[
+  v_2 = \begin{bmatrix}
+	1+3i\\	
+	5\\
+	\end{bmatrix}
+  \] 
+  So the fundamental set of solution is 
+  \[
+  x(t)=
+  \begin{bmatrix}
+	2i\\	
+	1\\
+	\end{bmatrix}e^{(-1+2i)t}+
+	 \begin{bmatrix}
+	-2i\\	
+	1\\
+	\end{bmatrix}e^{(-1-2i)t}
+  \]
+  Since \(re^{i\theta}=rcos(\theta)+irsin(\theta) \)
+\[
+  x(t)=
+  c_1
+  \begin{bmatrix}
+	-5cos(3t)\\	
+	cos(3t)+sin(3t)\\
+	\end{bmatrix}+
+	c_2
+	 \begin{bmatrix}
+	-5sin(3t)\\	
+	sin(3t)-3cos(3t)\\
+	\end{bmatrix}
+\]
+\end{homeworkProblem}
+
+
+\begin{homeworkProblem}
 \subsection{Project 3}
 \subsubsection{1}
 \includegraphics[scale=0.5]{img_1_y.png} 
