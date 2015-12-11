@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 DEC 2015 01:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 DEC 2015 01:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**hw12.tex
-(./hw12.tex
+**hw13.tex
+(./hw13.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -511,8 +511,8 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
 \c@partCounter=\count128
 \c@homeworkProblemCounter=\count129
- (./hw12.aux)
-\openout1 = `hw12.aux'.
+ (./hw13.aux)
+\openout1 = `hw13.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
 LaTeX Font Info:    ... okay on input line 139.
@@ -601,82 +601,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4] [5]
-<img_1_y.png, id=31, 875.27pt x 788.9475pt>
-File: img_1_y.png Graphic file (type png)
- <use img_1_y.png>
-Package pdftex.def Info: img_1_y.png used on input line 420.
-(pdftex.def)             Requested size: 437.63393pt x 394.47278pt.
-
-Overfull \hbox (9.15678pt too wide) in paragraph at lines 420--422
-[] \OT1/cmr/m/n/10 From the
- []
-
-[6] <img_2_05_y.png, id=36, 881.2925pt x 791.95876pt>
-File: img_2_05_y.png Graphic file (type png)
- <use img_2_05_y.png>
-Package pdftex.def Info: img_2_05_y.png used on input line 423.
-(pdftex.def)             Requested size: 440.64517pt x 395.97841pt.
-
-<img_2_075_y.png, id=37, 881.2925pt x 786.94pt>
-File: img_2_075_y.png Graphic file (type png)
- <use img_2_075_y.png>
-Package pdftex.def Info: img_2_075_y.png used on input line 425.
-(pdftex.def)             Requested size: 440.64517pt x 393.46904pt.
-
-Overfull \hbox (12.16803pt too wide) in paragraph at lines 423--427
-[] \OT1/cmr/m/n/10 From the
- []
-
-[7 <./img_1_y.png>] [8 <./img_2_05_y.png>]
-<img_3_0.png, id=48, 885.3075pt x 788.9475pt>
-File: img_3_0.png Graphic file (type png)
- <use img_3_0.png>
-Package pdftex.def Info: img_3_0.png used on input line 428.
-(pdftex.def)             Requested size: 442.65266pt x 394.47278pt.
-
-<img_3_05.png, id=49, 879.285pt x 783.92876pt>
-File: img_3_05.png Graphic file (type png)
- <use img_3_05.png>
-Package pdftex.def Info: img_3_05.png used on input line 429.
-(pdftex.def)             Requested size: 439.64143pt x 391.96342pt.
-
-<img_3_075.png, id=50, 874.26625pt x 788.9475pt>
-File: img_3_075.png Graphic file (type png)
- <use img_3_075.png>
-Package pdftex.def Info: img_3_075.png used on input line 430.
-(pdftex.def)             Requested size: 437.13205pt x 394.47278pt.
- [9 <./img_2_075_y.png>] [10 <./img_3_0.png>] [11 <./img_3_05.png>]
-<img_4_0_y.png, id=63, 881.2925pt x 783.92876pt>
-File: img_4_0_y.png Graphic file (type png)
- <use img_4_0_y.png>
-Package pdftex.def Info: img_4_0_y.png used on input line 433.
-(pdftex.def)             Requested size: 440.64517pt x 391.96342pt.
- [12 <./img_3_075.png>] [13 <./img_4_0_y.png>] (./hw12.aux) ) 
+ [4]
+(./hw13.aux) ) 
 Here is how much of TeX's memory you used:
- 13430 strings out of 493089
- 271946 string characters out of 6134842
- 320564 words of memory out of 5000000
- 16632 multiletter control sequences out of 15000+600000
+ 13394 strings out of 493089
+ 271364 string characters out of 6134842
+ 322565 words of memory out of 5000000
+ 16604 multiletter control sequences out of 15000+600000
  12456 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,21n,66p,414b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on hw12.pdf (13 pages, 318747 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on hw13.pdf (4 pages, 116356 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
