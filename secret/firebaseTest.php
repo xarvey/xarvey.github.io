@@ -13,7 +13,7 @@ $firebasePath = '/';
 $fb = new fireBase($url, $token);
 $dateTime = new DateTime();
 
-$response = $fb->set($firebasePath. '/' . $dateTime->format('c'), $arduino_data);
+$response = $fb->set($firebasePath. '/data' . $dateTime->format('c'), $arduino_data);
 
 
 sleep(2);
