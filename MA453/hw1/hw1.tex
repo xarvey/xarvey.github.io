@@ -1,0 +1,232 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#1}
+\newcommand{\hmwkDueDate}{January 17th, 2017}
+\newcommand{\hmwkClass}{Elements of Algebra I}
+\newcommand{\hmwkClassTime}{Section 161}
+\newcommand{\hmwkClassInstructor}{Professor Deepam Patel}
+\newcommand{\hmwkAuthorName}{Yao Xiao}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\  }\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\newpage
+\newpage
+
+\begin{homeworkProblem}
+1. The elements of the set are all numbers between 1 and 3, excluding 1 and 3 \\
+2. An empty set
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\[	
+\begin{split}
+A \cap (B \setminus C) &:= \{x: x \in A \ and (\ x \in B \ and \ x \not \in C) \} \\
+&= \{x: x \in A \ and  \ \ x \in B \ and \ x \not \in C) \} \\
+&= \{x: (x \in A \ and  \ \ x \in B ) \ and \ x \not \in C) \}\\
+&= \{x: x \in A \cap B \ and \ x \not \in C) \}\\
+&= (A \cap B) \setminus C
+	\end{split}
+	 \]
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+\[	
+\begin{split}
+(A \cap B) ^c :&= \{x \in S \ and \  x \notin (A \cap B)\}\\
+&= \{x \in S \ and \  x \notin A \ and \ x \notin B)\}\\
+&= \{x \in S \ and \  x \notin A \}  \cap \{x \in S \ and \ x \notin B) \}\\
+&= \{x \in S \ and \  x \in A^c \}  \cap \{x \in S \ and \ x \in B^c) \}\\
+&= A^c \cap B^c
+	\end{split}
+	 \]
+\end{homeworkProblem}
+
+%4
+\begin{homeworkProblem}
+\[	
+\begin{split}
+(A \times B) \cap (C \times D) &= \{(x,y): x \in A \ and \ y \in B \}
+\cap \{(x,y): x \in C \ and \ y \in D \}\\
+&= \{(x,y): x \in A \ and \ y \in B \ and \ x \in C \ and \ y \in D \}\\
+&= \{(x,y): x \in A \ and \ x \in C \ and \ y \in B \ and \ y \in D \}\\
+&= \{(x,y): x \in A \cap C \ and \ y \in B \cap  D \}\\
+&= (A \cap C) \times (B \cap D)
+	\end{split}
+	 \]
+\end{homeworkProblem}
+
+%5
+\begin{homeworkProblem}
+\[	
+\begin{split}
+LHS = (\neg (p \rightarrow q)) = \neg (\neg p \lor (p \land q))
+=p \land \neg (p \land q) = p \land (\neg p \lor \neg q) =  (p \land \neg p) \lor (p \land \neg q)\\
+ = False \lor  p \land \neg q = p \land \neg q = RHS
+	\end{split}
+	 \]
+\end{homeworkProblem}
+
+%6
+\begin{homeworkProblem}
+Suppose the two numbers are a and b
+\[
+\begin{split}
+\exists x,y \in \mathbb{Z} \ a=2x+1, b=2y+1 \\ a+b=2x+2y+2=2(x+y+1) 
+	\end{split}
+\]
+So the sum of the two odd number is even
+\end{homeworkProblem}
+
+%7
+\begin{homeworkProblem}
+Suppose x+4 is odd, then \( \exists y \ x+4=2y+1 \ x+7=x+4+3=2y+1+3=2(y+2) \)\\
+So x+7 is even.\\
+On the other hand, suppose x+7 is even then \( \exists y \ x+7=2y \ x+4=x+7-3=2y-3=2(y-2)+1 \)\\
+So x+4 is odd
+\end{homeworkProblem}
+
+%8
+\begin{homeworkProblem}
+\[
+\begin{split}
+A = \{1,2\}\\
+B = \{2,3\}\\
+A \setminus B = \{1\}\\
+B \setminus A = \{3\}\\
+\end{split}
+\]
+\end{homeworkProblem}
+
+\end{document}
