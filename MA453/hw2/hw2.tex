@@ -1,0 +1,232 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ \#2}
+\newcommand{\hmwkDueDate}{January 24th, 2017}
+\newcommand{\hmwkClass}{Elements of Algebra I}
+\newcommand{\hmwkClassTime}{Section 161}
+\newcommand{\hmwkClassInstructor}{Professor Deepam Patel}
+\newcommand{\hmwkAuthorName}{Yao Xiao}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\  }\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\begin{homeworkProblem}
+Proof by induction \\
+When n=1,
+\[
+\begin{split}
+1=\frac{n(n+1)(2n+1)}{6}=\frac{1*2*3}{6}
+\end{split}
+\]
+Suppose n=k
+\[
+\begin{split}
+1+2^2+3^2+...+k^2=\frac{k(k+1)(2k+1)}{6}\\
+1+2^2+3^2+...+k^2+(k+1)^2&=\frac{k(k+1)(2k+1)}{6}+(k+1)^2\\
+&=\frac{6(k+1)^2+k(k+1)(2k+1)}{6}\\
+&=\frac{(k+1)(6(k+1)+(2k+1)k)}{6}\\
+&=\frac{(k+1)(6k+6+2k^2+k)}{6}\\
+&=\frac{(k+1)(2k^2+7k+6)}{6}\\
+&=\frac{(k+1)(2k+3)(k+2)}{6}\\
+&=\frac{(k+1)(2(k+1)+1)((k+1)+1)}{6}\\
+\end{split}
+\]
+So the equation holds for n=k+1. Therefore, the inequalities hold for all positive integers n > 1 by induction
+
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+Proof by induction \\
+When n=2 \\
+We have \(1<8/3<5\), so the inequalities hold when n=2
+
+When n is greater than 2, \[
+\begin{split}
+1+2^2+3^2+...+(n-1)^2+n^2&<\frac{n^3}{3}+n^2\\
+&=\frac{n^3+3n^2}{3}\\
+&<\frac{n^3+3n^2+3n+1}{3}\\
+&=\frac{(n+1)^3}{3}
+\end{split}
+\]
+So the left inequality holds
+\[
+\begin{split}
+1+2^2+3^2+...n^2+(n+1)^2&>\frac{n^3}{3}+(n+1)^2\\
+&=\frac{n^3+3(n+1)^2}{3}\\
+&=\frac{n^3+3n^2+6n+3}{3}\\
+&>\frac{n^3+3n^2+3n+1}{3}\\
+&=\frac{(n+1)^3}{3}
+\end{split}
+\]
+So the right inequality holds as well
+\end{homeworkProblem}
+\begin{homeworkProblem}
+\begin{enumerate}
+\item Let a be the integer, (a-a)=0. 0 mod anything is 0. So it holds
+\item Let a and b be integers. Suppose that a $\equiv$ b (mod n), aka a-b = kn. b-a=-(a-b)=(-k)n. So it holds
+\item Let a,b,c be integers. a-b=nk, b-c=nj, let the first one plus the second one a-b+b-c=nk+nj, a-c=n(k+j) so a-c=nk' as well
+\end{enumerate}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+\( a \rightarrow b \) is true iff \( \neg b \rightarrow \neg a \) is true.
+So we assume a is even, and the product of the two even number is \(2k*2k=2(2k)\) and it's even too.
+\end{homeworkProblem}
+\begin{homeworkProblem}
+Let rotate be function R, so that \[R(1)=2\ R(2)=3\ R(3)=4\ R(4)=1 \]
+Let flip be function F, so that \[F(1)=2\ F(2)=1\ F(3)=4\ F(4)=3 \]
+When you rotate the square once, twice and three times. It will become (2,3,4,1),(3,4,1,2),(4,1,2,3), respectively. So when you do \(R^3*R\). it will become (1,2,3,4) which is I. So any rotation could be one of the I,\(R,R^2,R^3\)
+\end{homeworkProblem}
+\begin{homeworkProblem}
+Assume we are starting from (1,2,3,4)
+\[
+\begin{split}
+F=(2,1,4,3)\\
+FR=R(2,1,4,3)=(3,2,1,4)\\
+FR^2=R^2(2,1,4,3)=(4,3,2,1)\\
+FR^3=R^3(2,1,4,3)=(1,4,3,2)
+\end{split}
+\]
+\end{homeworkProblem}
+\begin{homeworkProblem}
+Since \(F^2=I\) and \(R^4=I\), there will be all the symmetric flips. Also it's obvious that you rotate first and flip later
+\[RF=F(2,3,4,1)=(3,2,1,4)=FR\]
+\end{homeworkProblem}
+\begin{homeworkProblem}
+The inverse of R is \(R^3\)\\
+The inverse of \(R^2\) is \(R^2\)\\
+The inverse of \(R^3\) is \(R\)
+\end{homeworkProblem}
+
+
+\end{document}
