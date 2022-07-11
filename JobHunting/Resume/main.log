@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.10)  10 JUL 2022 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.10)  11 JUL 2022 00:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -792,12 +792,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 139--141
-\T1/Raleway-TLF/m/n/9 Created an on-line mur-der mys-tery
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+\T1/Raleway-TLF/m/n/9 Created an on-line mur-der mys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
@@ -810,13 +815,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  24276 strings out of 478024
  472943 string characters out of 5842701
- 784901 words of memory out of 5000000
+ 784899 words of memory out of 5000000
  42297 multiletter control sequences out of 15000+600000
  581595 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,8n,118p,509b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/raleway/a_2bcjq6.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/raleway/a_bzmckq.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb><c:/texlive/2022/texmf-dist/fonts/type1/impallari/raleway/Raleway-Bold.pfb><c:/texlive/2022/texmf-dist/fonts/type1/impallari/raleway/Raleway-Regular.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on main.pdf (1 page, 99358 bytes).
+Output written on main.pdf (1 page, 99425 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
