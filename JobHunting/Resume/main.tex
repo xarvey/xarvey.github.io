@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{enumitem}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{Yao}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{Xiao}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Senior Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.30\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Phone}{12}{+1 (650)-304-5470}\\
+	\icon{At}{12}{\href{mailto:xarvey1111@gmail.com}{xarvey1111@gmail.com}}\\	
+	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/yao-xiao-87341079/}{linkedin.com/in/xiaoyao-1111}}\\
+
+\end{minipage}
+\begin{minipage}[t]{0.30\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://xarvey.github.io}{xarvey.github.io}}\\
+	\icon{Github}{12}{\href{https://github.com/xarvey}{github.com/xarvey}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2017/8 -- Current}
+		{Senior Software Engineer}
+		{Facebook/Meta Inc.\\\footnotesize{Menlo Park, CA/Sunnyvale, CA/New York, NY}} 
+		{
+			\begin{itemize}[leftmargin=-0.0125in]
+				\item Helped maintaining a tool similar to Amazon Turk that distributes work for 140,000s of content reviewers all over the world.
+				\item Used ML technologies and GBDT to optimize the matching between reviewers and tasks, resulted in 10\% efficiency gain 
+				\item Led a team of 3 to rewrite the frontpage for content reviewers including building a data pipeline and showing the key insights of their work
+				\item Improved logic for content duplication leveraging AI/ML to help reduce thousands of hours saved per week on reviewing content
+				\item Built a tool from scratch to let non engineers control settings for content review pipeline, having around 100 employees interacting with the tool every day.
+				\item Created a developer and code generation tool and from scratch to enable engineers creating their own labeling use cases and supported around 50 product launches
+				\item Helped improve stability of system by building a pipeline to analyze system error and fixing fundamental infrastructure flaws, improved the system stability to 99\%
+				\item Developed technical roadmap, held design review and revamped an infra that allows taking actions on millions of reported content per day efficiently
+				\item \texttt{PHP/Hack}\slashsep\texttt{JavaScript/React}\slashsep\texttt{Presto(MySQL)}\slashsep\texttt{Mercurial}\slashsep\texttt{Python}\slashsep\texttt{GraphQL}\slashsep\texttt{Relay}\slashsep\texttt{Redux}
+				\end{itemize}
+		}
+	\entry
+		{2016/5 -- 2016/8}
+		{Software Engineer Intern}
+		{Bloomberg L.P. \\\footnotesize{New York, NY}}
+		{
+			\begin{itemize}[leftmargin=-0.0125in]
+		\item Created Apache Spark based rule engine in Scala to support a new product being developed by the team
+		\item Adapted my system to the existing set of APIs'  to support billions of data points per day
+	 	\end{itemize}
+		}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.4\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Skills}
+
+	\begin{barchart}{4}
+		\baritem{Hack/PHP}{90}
+		\baritem{React/Relay/GraphQL/NextJS/NodeJS/JavaScript}{80}
+		\baritem{Airflow/SQL}{70}
+		\baritem{Git/Mercurial}{70}
+		\baritem{Python}{60}
+		\baritem{Scala}{20}
+		\baritem{C++}{10}
+		\baritem{ML}{10}
+	\end{barchart}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Languages}
+	
+	\textbf{English} - proficient\\
+	\textbf{Chinese} - native\\
+	\textbf{Spanish} - rudimentary
+
+	\cvsect{Side Project}
+    Created an online murder mystery game during covid time that allows people enjoying the games on zoom
+\end{minipage}
+\hfill
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2013 -- 2017}
+		{Bachelor of Science in Computer Science with a Minor in Math}
+		{Purdue University \\\footnotesize{West Lafayette, IN}}
+		{Overall GPA: 3.7/4.0}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
