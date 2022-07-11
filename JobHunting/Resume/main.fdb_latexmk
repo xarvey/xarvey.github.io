@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1657512914 "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" "main.pdf" "main" 1657512916
-  "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" 1657512913 7020 e42d46457182d9686a69d59804608163 ""
+["pdflatex"] 1657513607 "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" "main.pdf" "main" 1657513609
+  "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" 1657513606 6929 6e85322792af0ee3f030dd6d2cb33428 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1657501930 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1657502880 1687 f004baecce60175c6453d0e3f808cf20 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1657502880 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -183,10 +183,10 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1657506916 4634946 d2848b86361d48ab78eef9225f65482b ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1657507074 2864804 0e3aaff9f2ff8373433e908e97033ca1 ""
   "c:/texlive/2022/texmf.cnf" 1657506879 713 e69b156964470283e0530f5060668171 ""
-  "developercv.cls" 1657510373 7489 9e95cb81dcce12fa70f60fe502668925 ""
-  "main.aux" 1657512916 707 f1009997bd6d36e35322319b740ab3b8 "pdflatex"
+  "developercv.cls" 1657513511 7489 9e95cb81dcce12fa70f60fe502668925 ""
+  "main.aux" 1657513609 707 f1009997bd6d36e35322319b740ab3b8 "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1657512913 7020 e42d46457182d9686a69d59804608163 ""
+  "main.tex" 1657513606 6929 6e85322792af0ee3f030dd6d2cb33428 ""
   (generated)
   "main.aux"
   "main.log"
