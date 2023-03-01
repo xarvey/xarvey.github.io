@@ -1,7 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1657519580 "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" "main.pdf" "main" 1657519583
-  "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" 1657519579 6958 64c6be5a52041035b85f1a53d1c3ec0b ""
-  "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1657501930 2971 def0b6c1f0b107b3b936def894055589 ""
+["pdflatex"] 1677649700 "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" "main.pdf" "main" 1677649702
+  "c:/Users/User/Documents/GitHub/xarvey.github.io/JobHunting/Resume/main.tex" 1677649699 7289 3e29bcc4ae88c8a82b8392aba425c884 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1657502880 1687 f004baecce60175c6453d0e3f808cf20 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1657502880 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/raleway/a_2bcjq6.enc" 1657505328 3304 b327a193b74530cc7913fed1ac883860 ""
@@ -14,7 +13,6 @@
   "c:/texlive/2022/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-ts1--base.tfm" 1657505328 1496 37fb8579e594c7f7539996b6714407f2 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-ts1.tfm" 1657505328 1520 68f54f31b942adc31ec6247b8ba2f486 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm" 1657502488 3584 d3d8ac8b25ca19c0a40b86a5db1e8ccc ""
-  "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ectt0900.tfm" 1657502488 1536 ae7aab2f8a4bc9edfce2899f53ba88c3 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1657501173 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1657501173 996 a18840b13b499c08ac2de96a99eda4bc ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1657501915 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -27,7 +25,6 @@
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm" 1657502880 1360 76c648952c3cfb458d3ca1d9dde7e9bf ""
   "c:/texlive/2022/texmf-dist/fonts/type1/impallari/raleway/Raleway-Bold.pfb" 1657505328 95654 03b9eec4f5535aa10523455c26eb8f55 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/impallari/raleway/Raleway-Regular.pfb" 1657505328 90961 008072eb36c0f5b6abf385f04c9a9592 ""
-  "c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb" 1657501931 170827 b1cb46f82d978af2aeb6bf26777fa82d ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb" 1657502880 173219 890b1c7806f4fd8da5584bf52ad6c3d7 ""
   "c:/texlive/2022/texmf-dist/fonts/vf/impallari/raleway/Raleway-Bold-tlf-t1.vf" 1657505328 1760 7df6bb44cf2bb7ec7ca13940c05cd411 ""
   "c:/texlive/2022/texmf-dist/fonts/vf/impallari/raleway/Raleway-Regular-tlf-t1.vf" 1657505328 1764 09704427a37456539dd12f4d95d60f20 ""
@@ -127,7 +124,6 @@
   "c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty" 1657503664 5119 4ce42f43368f652f9c9522d943cce8e4 ""
   "c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty" 1657503664 5048 84b05796b49b69e2d4257d537721c960 ""
   "c:/texlive/2022/texmf-dist/tex/latex/base/ly1enc.dfu" 1657503664 7037 e4c26db23a17b7b1e194c0156c525d98 ""
-  "c:/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd" 1657503664 2443 9b49febce64dd67fdcf3e162479671a9 ""
   "c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty" 1657502577 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1657502599 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "c:/texlive/2022/texmf-dist/tex/latex/extsizes/extarticle.cls" 1657502720 20602 3112294ba237d94ce4a1502cfef3594f ""
@@ -184,9 +180,9 @@
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1657507074 2864804 0e3aaff9f2ff8373433e908e97033ca1 ""
   "c:/texlive/2022/texmf.cnf" 1657506879 713 e69b156964470283e0530f5060668171 ""
   "developercv.cls" 1657518571 7493 0b6370e39d9c4e20d0cef3a3f603837d ""
-  "main.aux" 1657519582 707 3f06ae326f19cde9ddeae7d668f9f4ed "pdflatex"
+  "main.aux" 1677649702 707 3f06ae326f19cde9ddeae7d668f9f4ed "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1657519579 6958 64c6be5a52041035b85f1a53d1c3ec0b ""
+  "main.tex" 1677649699 7289 3e29bcc4ae88c8a82b8392aba425c884 ""
   (generated)
   "main.aux"
   "main.log"
